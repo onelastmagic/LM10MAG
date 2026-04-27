@@ -36,9 +36,18 @@ export function Navbar() {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <a
           href="#hero"
-          className="text-2xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent hover:opacity-80 transition-opacity"
+          className="flex items-center gap-2.5 hover:opacity-80 transition-opacity"
         >
-          $LM10MAG
+          <img
+            src="https://res.cloudinary.com/dnsfaoqzk/image/upload/f_auto,q_auto/v1777263013/POSSUL_X_DEF_k4fjhl.png"
+            alt="POSSUL"
+            width={32}
+            height={32}
+            className="w-8 h-8 object-contain"
+          />
+          <span className="text-2xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+            $LM10MAG
+          </span>
         </a>
 
         {/* Desktop Nav */}

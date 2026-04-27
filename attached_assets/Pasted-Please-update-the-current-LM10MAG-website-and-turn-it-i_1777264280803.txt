@@ -1,0 +1,313 @@
+Please update the current $LM10MAG website and turn it into a polished, conversion-focused Solana memecoin landing page using the following exact requirements.
+
+IMPORTANT:
+- Keep the site as a modern SPA built with Vite + React.
+- Keep the current dark Solana-native style, but improve credibility, hierarchy, and conversion.
+- Use the image URLs below directly from Cloudinary.
+- Optimize image delivery where possible by using Cloudinary transformations like `f_auto,q_auto` when appropriate.
+- Keep everything fully responsive and mobile-first.
+- Keep the website in English only.
+- Make all external links open in a new tab.
+
+==================================================
+ASSETS TO USE
+==================================================
+
+1) POSSUL logo:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777263013/POSSUL_X_DEF_k4fjhl.png
+
+2) Main hero background image:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777262321/MS10MAG_omf2nz.png
+
+3) Legacy timeline images:
+- Rosario:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777263728/messi_rosario_cndtvs.jpg
+
+- Barcelona:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777263005/Messi_BARCELONA_os0ixm.png
+
+- PSG:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777262998/Messi_PSG_ocstyd.png
+
+- Argentina:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777262989/MESSI_ARGENTINA_xtnhtx.png
+
+- Inter Miami:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777262999/MESSI_INTER_DE_MIAMI_ytbeg6.png
+
+4) Optional image for “One Last Magic” moment:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777263733/LM10MAG_q9qzzx.jpg
+
+==================================================
+GLOBAL IMPROVEMENTS
+==================================================
+
+1. Improve the information architecture so the page feels more professional and more native to the Solana ecosystem.
+2. Keep the visual tone epic + degen, but reduce anything that feels placeholder, generic or unfinished.
+3. Improve trust signals:
+   - clear official links
+   - contract box
+   - POSSUL branding as issuer
+   - clearer CTA hierarchy
+4. Keep motion subtle:
+   - soft fade-in / slide-up on scroll
+   - hover effects on buttons and cards
+   - no excessive glow spam
+5. Keep the site fast and clean:
+   - lazy load timeline images
+   - add width/height when possible
+   - use semantic HTML
+   - ensure strong contrast and readable typography
+
+==================================================
+HEADER / NAVBAR
+==================================================
+
+1. In the navbar, place the POSSUL logo directly next to the `$LM10MAG` brand text to show that POSSUL is the issuer.
+2. Use the POSSUL logo image from Cloudinary.
+3. Keep the “Buy now” button on the right side, but make sure it links to the Pump.fun placeholder URL for now.
+4. Keep the sticky navbar behavior.
+5. Ensure mobile hamburger navigation works correctly.
+
+==================================================
+HERO SECTION
+==================================================
+
+1. Replace the current hero background with the main hero background image:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777262321/MS10MAG_omf2nz.png
+
+2. Use the hero background as a full-bleed section background with:
+   - background-size: cover
+   - background-position: center
+   - a dark overlay for readability
+
+3. Keep the hero copy structure, but improve it slightly for trust and clarity:
+   - small badge: “ONE LAST MAGIC”
+   - main display: `$LM10MAG`
+   - headline: “Messi’s final World Cup, immortalized on Solana.”
+   - subheadline: explain that $LM10MAG is a Solana meme coin celebrating Messi’s legendary career and final World Cup narrative, issued by POSSUL.
+
+4. CTA buttons in the hero:
+   - Primary: “Buy $LM10MAG on Pump.fun”
+   - Secondary: “Join the Community”
+   - Remove any Dexscreener button from the hero until migration happens.
+
+5. Add a new **official contract box** directly below the CTA buttons:
+   - Label: “Official Contract”
+   - Show a placeholder value for now: `COMING SOON`
+   - Add a copy button to the right
+   - The copy button should copy the contract string to clipboard
+   - If the value is still `COMING SOON`, the copy button can either copy that text or be visually disabled until replaced
+   - Style this box like a premium Solana token widget: dark glass card, subtle border, small label, monospace contract text
+   - Add a tiny note under it: “The official mint address will be added here at launch.”
+
+6. Keep a small risk note under the hero, but make it visually minimal.
+
+==================================================
+REMOVE CURRENT RED DISCLAIMER BOX
+==================================================
+
+There is a current red-accent text box that says:
+“Let’s be perfectly clear: this is a pure meme coin...”
+
+Remove that entire red disclaimer box completely from the page.
+
+==================================================
+LEGACY SECTION — FULL VISUAL TIMELINE
+==================================================
+
+Replace the current card grid for “Messi’s Legacy, Block by Block” with a more premium **timeline layout**.
+
+Requirements:
+
+1. Keep the section title:
+   “Messi’s Legacy, Block by Block”
+
+2. Replace the existing phase cards with a **visual timeline**, where each stage has:
+   - image
+   - title
+   - short description
+   - year or era label if visually helpful
+
+3. Use the following sequence and images:
+
+Stage 1 — Rosario / Early Years
+Image:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777263728/messi_rosario_cndtvs.jpg
+Text:
+Title: “Rosario”
+Description: “The kid from Rosario who broke every youth record and began writing the story of a legend.”
+
+Stage 2 — Barcelona Era
+Image:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777263005/Messi_BARCELONA_os0ixm.png
+Text:
+Title: “Barcelona”
+Description: “The dynasty years — league titles, Champions Leagues, Ballon d’Ors, and the rise of the GOAT argument.”
+
+Stage 3 — Argentina & 2022 World Cup
+Image:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777262989/MESSI_ARGENTINA_xtnhtx.png
+Text:
+Title: “Argentina”
+Description: “From heartbreak in finals to lifting the World Cup in 2022 and changing the story forever.”
+
+Stage 4 — PSG Chapter
+Image:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777262998/Messi_PSG_ocstyd.png
+Text:
+Title: “PSG”
+Description: “A new era in Paris: goals, assists, and Champions League nights in a different shirt.”
+
+Stage 5 — Inter Miami & One Last Magic
+Primary Image:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777262999/MESSI_INTER_DE_MIAMI_ytbeg6.png
+Optional supporting image:
+https://res.cloudinary.com/dnsfaoqzk/image/upload/v1777263733/LM10MAG_q9qzzx.jpg
+Text:
+Title: “Inter Miami & One Last Magic”
+Description: “Taking the magic to the U.S., rewriting MLS, and preparing the ground for one last World Cup dance on Solana.”
+
+4. Timeline layout behavior:
+   - Desktop: alternating left/right or a horizontal premium timeline
+   - Mobile: stacked cards with a visible timeline line or numbered progression
+   - Each stage must feel visually distinct and polished, not like generic boxes
+   - Use image-first layout with text block overlay or adjacent text
+   - Use lazy loading for images
+
+==================================================
+WORLD CUP CHAOS SECTION
+==================================================
+
+1. Keep the section but polish it:
+   - title: “World Cup Chaos — The Next Chapter”
+   - explain that $LM10MAG is the pilot project
+   - if supported, POSSUL may launch World Cup Chaos focused on absurd and viral 2026 World Cup moments
+   - early supporters may receive future access and airdrops
+
+2. CTA button:
+   - change text to: “Follow POSSUL”
+   - use the X logo only (modern X, not the old Twitter bird)
+   - link to: https://x.com/POSSUL_SOL
+
+==================================================
+MUSEUM SECTION
+==================================================
+
+Turn the museum into a clean “Coming Soon” section.
+
+Requirements:
+1. Keep title: “Meme & Fan Art Museum”
+2. Replace current image cards with:
+   - one centered premium placeholder card
+   - text: “Coming Soon”
+   - subtitle: “This space will showcase community memes and AI-edited art from the first Ultras.”
+3. Section body text should say:
+   “Post on X using #LM10MAG and tag @LM10MAG and @POSSUL_SOL. The best creations will be featured here and may be eligible for future airdrops.”
+4. Make this section feel intentionally empty, not unfinished.
+
+==================================================
+TOKENOMICS SECTION
+==================================================
+
+Simplify the tokenomics section.
+
+1. Remove the current 80% / 10% / 10% visual cards entirely.
+2. Replace them with a more minimal “Token Facts” style layout.
+3. Show only:
+   - Chain: Solana
+   - Ticker: $LM10MAG
+   - Total Supply: 1,000,000,000
+   - Launchpad: Pump.fun
+   - DEX after migration: Raydium
+4. Add a short trust note:
+   “Clean launch structure. No hidden presales. No fake VC narrative.”
+5. Present this in either:
+   - a premium info grid
+   - or one elegant glassmorphism card with clean rows
+6. Avoid oversized percentages.
+
+==================================================
+HOW TO BUY SECTION
+==================================================
+
+Keep the How to Buy section, but align it to the real flow:
+
+1. Phantom wallet
+2. Fund with SOL
+3. Use official Pump.fun link
+4. Verify mint address from website + Solscan
+5. Buy on Pump.fun
+6. After migration, chart and DEX trading become available
+
+Make the steps visually clearer with numbered cards or an elegant step flow.
+
+==================================================
+COMMUNITY SECTION
+==================================================
+
+Simplify the final community area.
+
+1. Keep title:
+   “Join the $LM10MAG Ultras”
+2. Reduce the two large button blocks.
+3. Instead, create a cleaner final community row with:
+   - one X icon leading to @LM10MAG
+   - one X icon leading to @POSSUL_SOL
+4. If the design looks cleaner with only one X icon + small text links next to it, do that.
+5. The section should feel premium and minimal, not bulky.
+
+Use these URLs:
+- https://x.com/LM10MAG
+- https://x.com/POSSUL_SOL
+
+==================================================
+OFFICIAL LINKS / TRUST ROW
+==================================================
+
+Add a small trust row somewhere under the hero or near token facts with these labels:
+- Official Website
+- Pump.fun
+- X / LM10MAG
+- X / POSSUL
+- Solscan (placeholder until mint exists)
+
+Use placeholder href values where we still do not have the final URL, but structure the section now so it can be updated quickly.
+
+==================================================
+COPY / LANGUAGE CLEANUP
+==================================================
+
+1. Make sure the entire site is in ENGLISH only.
+2. Remove any remaining Spanish labels like “Compra ahora” or “Cómo comprar”.
+3. Keep the tone polished, emotional, and native to Solana culture.
+4. Avoid overexplaining basic crypto concepts.
+
+==================================================
+DESIGN IMPROVEMENTS
+==================================================
+
+1. Make the hero feel more premium with stronger layering and spacing.
+2. Use better visual hierarchy for headings and subheadings.
+3. Use the POSSUL logo subtly but clearly as issuer identity.
+4. Ensure all cards, timeline items, and buttons have consistent border radius, border treatment, and shadows.
+5. Keep the page polished enough that Solana degens immediately understand:
+   - what this is
+   - why it matters
+   - where to buy
+   - how to verify it
+   - who issued it
+
+==================================================
+FINAL QA
+==================================================
+
+After all edits:
+- check desktop and mobile layouts
+- ensure all image URLs load correctly
+- ensure all X links work
+- ensure no placeholder # links remain for social buttons
+- ensure the contract copy box is visible and styled correctly
+- ensure the legacy timeline is fully visual
+- ensure the hero background has been replaced
+- ensure all remaining UI text is in English

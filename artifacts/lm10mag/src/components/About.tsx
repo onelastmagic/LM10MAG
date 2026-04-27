@@ -27,11 +27,6 @@ export function About() {
             <p>
               Messi is a living legend. This token is a tribute to his entire career, framing the last World Cup as <strong className="text-primary font-bold">"one last show of magic"</strong>. It's about that exact feeling when the ball is at his feet and the world stops breathing.
             </p>
-            <div className="p-6 mt-8 border-l-4 border-destructive bg-destructive/5 rounded-r-lg">
-              <p className="text-base text-foreground/80">
-                Let's be perfectly clear: this is a pure meme coin. There is no intrinsic value, no promises, and no guaranteed returns. What we have is story, community, and pure on-chain chaos.
-              </p>
-            </div>
           </div>
         </motion.div>
       </div>
