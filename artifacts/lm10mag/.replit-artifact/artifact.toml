@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "$LM10MAG — One Last Magic"
+version = "1.0.0"
+id = "artifacts/lm10mag"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22265
+
+[services.development]
+run = "pnpm --filter @workspace/lm10mag run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/lm10mag", "run", "build" ]
+publicDir = "artifacts/lm10mag/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22265"
+BASE_PATH = "/"

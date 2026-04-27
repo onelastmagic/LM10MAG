@@ -1,0 +1,263 @@
+I want you to build a professional, production-ready single page website using **Vite + React**, following these deployment rules and technical constraints:
+
+1) When configuring the project, ALWAYS create a `vercel.json` file in the root to ensure correct deployment of a Single Page Application (SPA) with Vite. The file must have EXACTLY this configuration:
+- framework: "vite"
+- outputDirectory: "dist/public"
+- rewrites: one rule that redirects all routes (source: "/(.*)") to `/index.html` so that client-side routing works without 404 errors.
+
+2) In case automatic deploy on Vercel does NOT run, I will execute this manually in the Replit shell:
+- `git commit --allow-empty -m "Despliegue manual Vercel"`
+- `git push`
+If there is a "locked file" error, I will run:
+- `rm -f .git/index.lock`
+
+With that technical setup in mind, now build the actual site:
+
+---
+
+### PROJECT CONTEXT – $LM10MAG – ONE LAST MAGIC
+
+- Project: **$LM10MAG – One Last Magic**
+- Type: **Solana meme coin** that celebrates **Messi’s last World Cup** and his full career.
+- Studio: Issued and developed by **POSSUL**, a Solana-native meme coin studio focused on transparent, narrative-driven tokens.
+- Audience: **Solana degens** already familiar with Pump.fun, Raydium, and Dexscreener (they know the basics of crypto).
+- Main goals of the site:
+  1) Make visitors WANT to **buy the token**.
+  2) Build **trust in POSSUL** as the issuer.
+  3) Introduce a future narrative project called **World Cup Chaos**, which may launch later if $LM10MAG performs well.
+- Language: **English only**.
+
+---
+
+### TECH & ARCHITECTURE
+
+- Use **Vite + React** to create a modern **Single Page Application (SPA)**.
+- Organize the code into clear React components:
+  - `Navbar`, `Hero`, `About`, `LegacyTimeline`, `WorldCupChaos`, `MemeMuseum`, `Tokenomics`, `HowToBuy`, `Roadmap`, `PossulSection`, `Community`, `Footer`.
+- Implement **smooth scroll** between sections when clicking navbar links (anchor-based navigation).
+- Make the layout **100% responsive (mobile-first)**:
+  - Desktop: generous spacing between sections, multi-column grids where it makes sense.
+  - Mobile: stacked layout, big tap targets for buttons, hamburger menu for the navbar.
+- Use modern CSS (Flexbox and CSS Grid) and keep styling clean and maintainable (no messy inline styles).
+
+---
+
+### VISUAL STYLE & BRANDING
+
+Use this visual concept (you can assume we will provide images later, so use placeholders):
+
+- Hero illustration: Messi seen **from the back**, wearing number 10, facing a **golden World Cup trophy** on a futuristic pitch with neon lines, in a cosmic/galactic background.
+- Color palette:
+  - Background: very dark blues and purples (space / galaxy).
+  - Accents: neon cyan and magenta lines (futuristic pitch).
+  - Highlights: metallic **gold** for trophy references, icons and main CTA button.
+- Typography:
+  - Titles: bold geometric sans serif similar to **Grift** (for example, Montserrat / Poppins / Inter – choose one close to that vibe).
+  - Body: a clean sans serif with high readability.
+- Overall vibe:
+  - **Epic + degen** at the same time: feels like a high-end World Cup tribute but clearly a meme coin site, not a bank.
+- Animations & UX:
+  - Smooth **fade-in** and **slide-up** animations for sections on scroll.
+  - Hover states on all buttons and links (color shift, subtle scale, or glow).
+  - Lazy loading for large images to keep performance strong.
+
+---
+
+### LAYOUT & SECTIONS (IN THIS EXACT ORDER)
+
+#### 1. Navbar (Sticky)
+
+- Component: `Navbar`.
+- Behavior:
+  - Sticky at the top with `position: sticky` and a slight background blur or solid dark background.
+  - On scroll, it becomes a bit smaller and maybe adds a subtle shadow.
+- Left side: minimal wordmark like `$LM10MAG`.
+- Right side: links that scroll to sections:
+  - Hero, Lore, Legacy, Chaos, Museum, Tokenomics, How to Buy, Community.
+- All links should use in-page anchors and smooth scrolling.
+
+---
+
+#### 2. Hero – “One Last Magic”
+
+- Component: `Hero`.
+- Content:
+  - Small label in the top-left area of the hero: `ONE LAST MAGIC`.
+  - Big central tag / logo text: `$LM10MAG` (using the headline font).
+  - Main headline: **“Messi’s final World Cup, immortalized on Solana.”**
+  - Subheadline: explain that **$LM10MAG is a meme coin that celebrates Messi’s entire career**, with his last World Cup as the ultimate stage, developed by **POSSUL** as a transparent meme coin issuer.
+- CTA Buttons (use placeholder URLs that we can replace later):
+  - Primary: `Buy $LM10MAG on Pump.fun`
+  - Secondary: `View Chart on Dexscreener`
+  - Tertiary: `Join the Community`
+- Under the buttons, add a small risk note:
+  - “Always double-check the official contract address before buying. This is a high-risk meme coin — only use what you can afford to lose.”
+- Visual:
+  - Hero background matches the cosmic Messi + trophy + neon pitch concept.
+  - Use a dark overlay to ensure text contrast.
+
+---
+
+#### 3. About / Lore – “What is $LM10MAG?”
+
+- Component: `About`.
+- Section title: `What is $LM10MAG?`
+- Content (2–3 short paragraphs):
+  - Explain that $LM10MAG was created by a group of obsessed football fans who saw a narrative opportunity around the upcoming World Cup.
+  - Emphasize that **Messi is a living legend** and this token is a tribute to his whole career, with the last World Cup as “one last show of magic”.
+  - Clarify that it is a **pure meme coin**: no intrinsic value, no promises, no guaranteed returns — just story, community, and on-chain chaos.
+
+Layout: two columns on desktop (text + illustrative image or AI-edited “realistic” style image of a player silhouette), stacked on mobile.
+
+---
+
+#### 4. Messi Legacy Timeline
+
+- Component: `LegacyTimeline`.
+- Section title: `Messi’s Legacy, Block by Block`.
+- Create a timeline with 4–5 cards, each with a title and 2–3 lines of text:
+  1. Early Years – “The kid from Rosario who broke every youth record.”
+  2. Barcelona Era – “The dynasty: league titles, Champions Leagues, and the rise of the GOAT argument.”
+  3. National Team Struggles – “Finals, pressure from an entire country, heartbreak on the biggest stages.”
+  4. Copa América – “The turning point: lifting a major trophy with Argentina and shifting the narrative forever.”
+  5. One Last Magic – “The final World Cup run, where everything is on the line and the legend becomes untouchable.”
+
+Use either a horizontal timeline on desktop and vertical on mobile, or a responsive grid.
+
+---
+
+#### 5. World Cup Chaos – Next Chapter
+
+- Component: `WorldCupChaos`.
+- Section title: `World Cup Chaos – The Next Chapter`.
+- Explain that:
+  - **$LM10MAG is the pilot project.**
+  - If the community shows strong support, POSSUL will launch **World Cup Chaos**, a bigger narrative project built around absurd, hilarious, and viral moments from the 2026 World Cup.
+  - Early and active supporters of $LM10MAG (holders, raiders, meme creators) will be considered for **future airdrops and access** when World Cup Chaos goes live.
+
+Add a small call-to-action encouraging users to follow the project on X for updates on World Cup Chaos.
+
+---
+
+#### 6. Meme & Fan Art Museum
+
+- Component: `MemeMuseum`.
+- Section title: `Meme & Fan Art Museum`.
+- Layout:
+  - A responsive grid ready to display community memes and AI-edited art about Messi and $LM10MAG.
+  - For now, use placeholder cards with dummy images and captions.
+- Text:
+  - Explain that this section will become an on-chain museum of Messi memes and fan creations tied to the token.
+  - Ask users to post on X using hashtag `#LM10MAG` and tag `@LM10MAG` and `@POSSUL_SOL`. The best content will be featured and may be eligible for future rewards.
+
+---
+
+#### 7. Tokenomics – Simple and Transparent
+
+- Component: `Tokenomics`.
+- Section title: `Tokenomics – Simple and Transparent`.
+- Show key stats clearly:
+  - Chain: **Solana**
+  - Ticker: **$LM10MAG**
+  - Total Supply: **1,000,000,000 $LM10MAG**
+- Distribution cards:
+  - **80% — Pump.fun bonding curve**  
+    Used for liquidity and early price discovery.
+  - **10% — Team & Core Contributors**  
+    Reserved for POSSUL devs and core collaborators who build and maintain the ecosystem.
+  - **10% — Treasury**  
+    For future incentives, collaborations, marketing and World Cup Chaos experiments.
+- Add a short note about transparency:
+  - No hidden presales.  
+  - No hidden VC bags.  
+  - Everything about the supply and distribution is clear from day one.
+
+---
+
+#### 8. How to Buy $LM10MAG
+
+- Component: `HowToBuy`.
+- Section title: `How to Buy $LM10MAG on Solana`.
+- Use a simple step-by-step layout (numbered list):
+  1. Install a Solana wallet like Phantom and securely store your seed phrase offline.
+  2. Buy SOL on a centralized exchange (Binance, Coinbase, etc.) and withdraw it to your Phantom wallet on the Solana network.
+  3. Use the **official Pump.fun link** from this website or from the official X account — never search blindly.
+  4. Check that the **mint address** shown on Pump.fun and Solscan matches the official address displayed on this site.
+  5. Swap SOL for $LM10MAG on Pump.fun.
+  6. After the token graduates and liquidity is added, you can also trade on Raydium and open the pair on Dexscreener using the “View Chart on Dexscreener” button.
+- Close with a risk reminder:
+  - “$LM10MAG is a high-volatility meme coin. Prices can move extremely fast and you can lose all your money. This is not financial advice — act under your own risk.”
+
+---
+
+#### 9. Roadmap (Meme Style)
+
+- Component: `Roadmap`.
+- Section title: `Roadmap (Very Serious, Not Really)`.
+- Three phases, each with a short title and 2–3 lines:
+  - **Phase 1 – Kickoff**  
+    Launch on Pump.fun, first degens, first raids and meme storms.
+  - **Phase 2 – Full-Time Degens**  
+    Raydium + Dexscreener, meme and fan art contests, treasury-funded experiments.
+  - **Phase 3 – Extra Time**  
+    World Cup Chaos teaser campaigns, potential merch, IRL meme moments, and community-driven chaos.
+- Add a tiny line below:
+  - “This roadmap is for entertainment purposes only. Reality may be wilder, messier, or completely different.”
+
+---
+
+#### 10. Issued by POSSUL
+
+- Component: `PossulSection`.
+- Section title: `Issued by POSSUL`.
+- Explain in 2–3 paragraphs:
+  - POSSUL is a Solana-native meme coin studio focused on transparent, narrative-driven tokens.
+  - The goal is to launch honest, story-rich memecoins where supply and intentions are clear from day one.
+  - $LM10MAG is the first release, with future projects (like World Cup Chaos) planned under the same POSSUL signature.
+
+---
+
+#### 11. Community
+
+- Component: `Community`.
+- Section title: `Join the $LM10MAG Ultras`.
+- Content:
+  - Describe the community as a stadium full of Ultras: raids, memes, football obsession, and degen energy.
+  - Encourage people to join if they want early info on airdrops, news, and future POSSUL launches.
+- Links / buttons:
+  - X – `@LM10MAG`
+  - X – `@POSSUL_SOL`
+
+---
+
+#### 12. Footer / Disclaimer
+
+- Component: `Footer`.
+- Style:
+  - Very dark background, small text, subtle top border or glow.
+- Content:
+  - Clarify that $LM10MAG is **not an official token** of Messi, any club, federation, or organization.
+  - Clarify that it is a **meme coin with no intrinsic value or expectation of profit**.
+  - Add the line:  
+    - “This is not financial advice — act under your own risk.”
+  - Include `© POSSUL` and the current year.
+
+---
+
+### TECHNICAL & UX REQUIREMENTS (FROM START TO FINISH)
+
+- 100% responsive, mobile-first layout.
+- Smooth scroll between sections using anchor navigation.
+- Sticky navbar that slightly shrinks on scroll.
+- Lazy loading for images to improve performance.
+- Basic accessibility: good color contrast, readable fonts, semantic HTML.
+- Clean component structure so we can easily:
+  - Replace the hero image.
+  - Insert the real mint address.
+  - Update URLs for Pump.fun and Dexscreener.
+- After generating the project, be ready to accept follow-up instructions like:
+  - “Change the primary button color to this hex code: …”
+  - “Replace the current Hero text with this exact copy: …”
+  - “Insert this specific contract address in the How to Buy section.”
+
+Build everything now according to this specification.

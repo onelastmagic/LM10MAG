@@ -1,0 +1,44 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "tozcdktZ1wIznWxRtb1rX"
+uri = "file://artifacts/lm10mag/public/images/hero.png"
+type = "image"
+title = "Messi back to camera neon pitch"
+
+[[generated]]
+id = "taIPYJ6mLFLShc9ET_hew"
+uri = "file://artifacts/lm10mag/public/images/museum-1.png"
+type = "image"
+title = "Messi meme art neon"
+
+[[generated]]
+id = "3levLqTfxRyefE9vHMJ0k"
+uri = "file://artifacts/lm10mag/public/images/museum-2.png"
+type = "image"
+title = "Golden trophy mashup"
+
+[[generated]]
+id = "yWf9iD3WnecE4KJGquwp1"
+uri = "file://artifacts/lm10mag/public/images/museum-3.png"
+type = "image"
+title = "Messi neon stadium"
+
+[[generated]]
+id = "U5R0rCgPb6pvUojPcOp24"
+uri = "file://artifacts/lm10mag/public/images/museum-4.png"
+type = "image"
+title = "Messi goat neon"
+
+[[generated]]
+id = "ynlKl37-UR5G9UuJky7P2"
+uri = "file://artifacts/lm10mag/public/images/museum-5.png"
+type = "image"
+title = "Trophy on moon"
+
+[[generated]]
+id = "n0NNBaSFtQ-i7mdjKEQWU"
+uri = "file://artifacts/lm10mag/public/images/museum-6.png"
+type = "image"
+title = "Neon laser football"

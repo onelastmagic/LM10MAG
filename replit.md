@@ -25,3 +25,11 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+
+## Artifacts
+
+- `lm10mag` (web, `/`) — $LM10MAG "One Last Magic" Solana meme coin landing page by POSSUL. Single-page React + Vite SPA, presentation-only (no backend). Sections: Navbar, Hero, About, LegacyTimeline, WorldCupChaos, MemeMuseum, Tokenomics, HowToBuy, Roadmap, PossulSection, Community, Footer.
+
+## Deployment
+
+- `vercel.json` at the repo root pins Vercel to `framework: vite`, `outputDirectory: dist/public`, and a SPA rewrite (`/(.*)` → `/index.html`) so client-side routing works without 404s.
