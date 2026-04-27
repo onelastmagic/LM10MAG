@@ -65,10 +65,7 @@ export function Hero() {
           <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-lg px-8 h-14 shadow-[0_0_30px_rgba(255,191,0,0.4)] hover:shadow-[0_0_40px_rgba(255,191,0,0.6)] transition-all">
             <a href="#">Buy $LM10MAG on Pump.fun</a>
           </Button>
-          <Button size="lg" variant="outline" asChild className="border-secondary/50 text-secondary hover:bg-secondary/10 hover:text-secondary font-bold text-lg px-8 h-14 backdrop-blur-sm">
-            <a href="#">View Chart on Dexscreener</a>
-          </Button>
-          <Button size="lg" variant="ghost" asChild className="text-muted-foreground hover:text-foreground font-bold text-lg px-8 h-14">
+          <Button size="lg" variant="outline" asChild className="border-white/20 text-foreground hover:bg-white/10 hover:text-foreground font-bold text-lg px-8 h-14 backdrop-blur-sm">
             <a href="#community">Join the Community</a>
           </Button>
         </motion.div>

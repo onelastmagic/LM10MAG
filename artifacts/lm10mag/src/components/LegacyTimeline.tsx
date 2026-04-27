@@ -11,28 +11,28 @@ const legacySteps = [
   {
     phase: "02",
     title: "Barcelona Era",
-    description: "The dynasty: league titles, Champions Leagues, and the rise of the GOAT argument.",
+    description: "The dynasty: La Liga titles, Champions Leagues, Ballon d'Ors and the rise of the GOAT argument.",
     color: "from-red-500/20 to-blue-900/0",
     border: "border-red-500/30"
   },
   {
     phase: "03",
-    title: "National Team Struggles",
-    description: "Finals, pressure from an entire country, heartbreak on the biggest stages.",
-    color: "from-slate-600/20 to-slate-900/0",
-    border: "border-slate-500/30"
-  },
-  {
-    phase: "04",
-    title: "Copa América",
-    description: "The turning point: lifting a major trophy with Argentina and shifting the narrative forever.",
+    title: "Argentina & 2022 World Cup",
+    description: "From heartbreak in finals to lifting the World Cup in 2022 and changing the story forever.",
     color: "from-sky-400/20 to-sky-900/0",
     border: "border-sky-400/30"
   },
   {
+    phase: "04",
+    title: "PSG Chapter",
+    description: "A new era in Paris: goals, assists and Champions League nights in a different shirt.",
+    color: "from-indigo-500/20 to-indigo-900/0",
+    border: "border-indigo-500/30"
+  },
+  {
     phase: "05",
-    title: "One Last Magic",
-    description: "The final World Cup run, where everything is on the line and the legend becomes untouchable.",
+    title: "Inter Miami & One Last Magic",
+    description: "Taking the magic to the U.S., rewriting MLS, and preparing the ground for one last World Cup dance on Solana with $LM10MAG.",
     color: "from-primary/30 to-primary/0",
     border: "border-primary/50",
     highlight: true

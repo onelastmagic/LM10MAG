@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Twitter } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 
 export function Community() {
   return (
@@ -23,14 +23,24 @@ export function Community() {
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" asChild className="h-16 px-8 text-lg bg-white text-black hover:bg-gray-200 font-bold">
-              <a href="#" className="flex items-center gap-2">
-                <Twitter className="w-6 h-6 fill-current" />
+              <a
+                href="https://x.com/LM10MAG"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <FaXTwitter className="w-6 h-6" />
                 X — @LM10MAG
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild className="h-16 px-8 text-lg border-white/20 hover:bg-white/10 font-bold">
-              <a href="#" className="flex items-center gap-2">
-                <Twitter className="w-6 h-6 fill-current" />
+              <a
+                href="https://x.com/POSSUL_SOL"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <FaXTwitter className="w-6 h-6" />
                 X — @POSSUL_SOL
               </a>
             </Button>

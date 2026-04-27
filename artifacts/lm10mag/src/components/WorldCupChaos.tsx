@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Twitter } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 
 export function WorldCupChaos() {
   return (
@@ -35,9 +35,14 @@ export function WorldCupChaos() {
             </div>
 
             <Button asChild size="lg" className="bg-accent hover:bg-accent/80 text-white font-bold px-8 shadow-[0_0_20px_rgba(255,0,255,0.4)]">
-              <a href="#" className="flex items-center gap-2">
-                <Twitter className="w-5 h-5 fill-current" />
-                Follow for Alpha
+              <a
+                href="https://x.com/POSSUL_SOL"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <FaXTwitter className="w-5 h-5" />
+                Follow POSSUL
               </a>
             </Button>
           </motion.div>
