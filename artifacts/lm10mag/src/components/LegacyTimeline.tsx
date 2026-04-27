@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const cld = (url: string) =>
-  url.replace("/upload/", "/upload/f_auto,q_auto,w_900/");
+  url.replace("/upload/", "/upload/f_auto,q_auto,w_800/");
 
 const legacyStages = [
   {
@@ -86,7 +86,7 @@ export function LegacyTimeline() {
           {/* Vertical timeline rail */}
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary/0 via-primary/40 to-accent/0 md:-translate-x-1/2 pointer-events-none" />
 
-          <div className="space-y-12 md:space-y-20">
+          <div className="space-y-10 md:space-y-14">
             {legacyStages.map((stage, index) => {
               const isRight = index % 2 === 1;
 
@@ -97,16 +97,16 @@ export function LegacyTimeline() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-80px" }}
                   transition={{ duration: 0.6, delay: 0.05 }}
-                  className={`relative flex flex-col md:flex-row items-stretch gap-6 md:gap-12 ${
+                  className={`relative flex flex-col md:flex-row md:items-center gap-6 md:gap-16 ${
                     isRight ? "md:flex-row-reverse" : ""
                   }`}
                 >
                   {/* Timeline node */}
-                  <div className="absolute left-4 md:left-1/2 top-6 md:top-10 -translate-x-1/2 z-20">
+                  <div className="absolute left-4 md:left-1/2 top-6 md:top-1/2 -translate-x-1/2 md:-translate-y-1/2 z-20">
                     <div
-                      className={`relative w-4 h-4 rounded-full border-2 ${
+                      className={`relative w-3.5 h-3.5 rounded-full border-2 ${
                         stage.highlight
-                          ? "bg-primary border-primary shadow-[0_0_16px_rgba(255,191,0,0.7)]"
+                          ? "bg-primary border-primary shadow-[0_0_14px_rgba(255,191,0,0.7)]"
                           : "bg-background border-primary/60"
                       }`}
                     >
@@ -116,55 +116,50 @@ export function LegacyTimeline() {
                     </div>
                   </div>
 
-                  {/* Image card */}
-                  <div className="md:w-1/2 pl-12 md:pl-0">
-                    <div
-                      className={`relative overflow-hidden rounded-2xl border ${
-                        stage.highlight
-                          ? "border-primary/40 shadow-[0_0_40px_rgba(255,191,0,0.2)]"
-                          : "border-white/10"
-                      } bg-card/60 backdrop-blur-sm group`}
-                    >
-                      <div className="aspect-[4/3] w-full overflow-hidden">
-                        <img
-                          src={stage.image}
-                          alt={`Messi — ${stage.title}`}
-                          loading="lazy"
-                          width={900}
-                          height={675}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        />
-                      </div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-background/10 to-transparent pointer-events-none" />
-                      <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5 flex items-end justify-between gap-3">
-                        <div className="font-mono text-xs tracking-widest text-primary/90 uppercase">
-                          Phase {stage.phase}
-                        </div>
-                        <div className="font-mono text-[10px] tracking-widest text-muted-foreground uppercase">
-                          {stage.era}
+                  {/* Image column */}
+                  <div className="md:w-1/2 pl-12 md:pl-0 flex md:justify-center">
+                    <div className="w-full max-w-[340px] mx-auto">
+                      <div
+                        className={`rounded-2xl border ${
+                          stage.highlight
+                            ? "border-primary/30 shadow-[0_0_30px_rgba(255,191,0,0.12)]"
+                            : "border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
+                        } bg-[#0c0a14] p-2`}
+                      >
+                        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl bg-[#0c0a14]">
+                          <img
+                            src={stage.image}
+                            alt={`Messi — ${stage.title}`}
+                            loading="lazy"
+                            className="absolute inset-0 w-full h-full object-contain"
+                          />
                         </div>
                       </div>
-                    </div>
 
-                    {stage.highlight && stage.secondaryImage && (
-                      <div className="mt-4 overflow-hidden rounded-xl border border-primary/30 aspect-[16/9]">
-                        <img
-                          src={stage.secondaryImage}
-                          alt="$LM10MAG — One Last Magic"
-                          loading="lazy"
-                          className="w-full h-full object-cover"
-                        />
+                      {/* Phase / era meta below image */}
+                      <div className="mt-3 flex items-center justify-between px-1 font-mono text-[10px] tracking-widest uppercase">
+                        <span className="text-primary/90">Phase {stage.phase}</span>
+                        <span className="text-muted-foreground">{stage.era}</span>
                       </div>
-                    )}
+
+                      {stage.highlight && stage.secondaryImage && (
+                        <div className="mt-4 rounded-xl border border-primary/25 bg-[#0c0a14] p-2">
+                          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg bg-[#0c0a14]">
+                            <img
+                              src={stage.secondaryImage}
+                              alt="$LM10MAG — One Last Magic"
+                              loading="lazy"
+                              className="absolute inset-0 w-full h-full object-contain"
+                            />
+                          </div>
+                        </div>
+                      )}
+                    </div>
                   </div>
 
-                  {/* Text */}
-                  <div className="md:w-1/2 pl-12 md:pl-0 flex md:items-center">
-                    <div
-                      className={`md:py-6 ${
-                        isRight ? "md:text-right md:pr-2" : "md:pl-2"
-                      }`}
-                    >
+                  {/* Text column */}
+                  <div className="md:w-1/2 pl-12 md:pl-0">
+                    <div className={isRight ? "md:text-right" : "md:text-left"}>
                       <h3
                         className={`text-2xl md:text-4xl font-black mb-3 leading-tight ${
                           stage.highlight ? "text-primary" : "text-foreground"
@@ -172,7 +167,7 @@ export function LegacyTimeline() {
                       >
                         {stage.title}
                       </h3>
-                      <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                      <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-md md:inline-block">
                         {stage.description}
                       </p>
                     </div>
