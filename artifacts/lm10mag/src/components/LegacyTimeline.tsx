@@ -118,7 +118,7 @@ export function LegacyTimeline() {
 
                   {/* Image column */}
                   <div className="md:w-1/2 pl-12 md:pl-0 flex md:justify-center">
-                    <div className="w-full max-w-[340px] mx-auto">
+                    <div className="w-full max-w-[360px] mx-auto">
                       <div
                         className={`rounded-2xl border ${
                           stage.highlight
@@ -126,12 +126,12 @@ export function LegacyTimeline() {
                             : "border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
                         } bg-[#0c0a14] p-2`}
                       >
-                        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl bg-[#0c0a14]">
+                        <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-[#0c0a14]">
                           <img
                             src={stage.image}
                             alt={`Messi — ${stage.title}`}
                             loading="lazy"
-                            className="absolute inset-0 w-full h-full object-contain"
+                            className="absolute inset-0 w-full h-full object-contain object-center"
                           />
                         </div>
                       </div>
@@ -144,12 +144,12 @@ export function LegacyTimeline() {
 
                       {stage.highlight && stage.secondaryImage && (
                         <div className="mt-4 rounded-xl border border-primary/25 bg-[#0c0a14] p-2">
-                          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg bg-[#0c0a14]">
+                          <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-[#0c0a14]">
                             <img
                               src={stage.secondaryImage}
                               alt="$LM10MAG — One Last Magic"
                               loading="lazy"
-                              className="absolute inset-0 w-full h-full object-contain"
+                              className="absolute inset-0 w-full h-full object-contain object-center"
                             />
                           </div>
                         </div>
