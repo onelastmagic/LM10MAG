@@ -6,7 +6,7 @@ import { Check, Copy } from "lucide-react";
 const HERO_IMAGE =
   "https://res.cloudinary.com/dnsfaoqzk/image/upload/f_auto,q_auto/v1777262321/MS10MAG_omf2nz.png";
 
-const CONTRACT_VALUE = "COMING SOON";
+const CONTRACT_VALUE = "TEST123456789ABC";
 
 export function Hero() {
   const [copied, setCopied] = useState(false);
@@ -92,9 +92,9 @@ export function Hero() {
             asChild
             className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-lg px-8 h-14 shadow-[0_0_30px_rgba(255,191,0,0.4)] hover:shadow-[0_0_40px_rgba(255,191,0,0.6)] transition-all"
           >
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              Buy $LM10MAG on Pump.fun
-            </a>
+            <a href="https://pump.fun/coin/TEST123456789ABC" target="_blank" rel="noopener noreferrer">
+  Buy $LM10MAG on Pump.fun
+</a>
           </Button>
           <Button
             size="lg"
