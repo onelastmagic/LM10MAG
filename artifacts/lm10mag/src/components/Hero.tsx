@@ -6,7 +6,7 @@ import { Check, Copy } from "lucide-react";
 const HERO_IMAGE =
   "https://res.cloudinary.com/dnsfaoqzk/image/upload/f_auto,q_auto/v1777262321/MS10MAG_omf2nz.png";
 
-const CONTRACT_VALUE = "TEST123456789ABC";
+const CONTRACT_VALUE = "8sCjTMCnPzFapU7vaycgBdgPMseQ8GDEPYGAhNR1uwV8";
 
 export function Hero() {
   const [copied, setCopied] = useState(false);
@@ -92,9 +92,9 @@ export function Hero() {
             asChild
             className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-lg px-8 h-14 shadow-[0_0_30px_rgba(255,191,0,0.4)] hover:shadow-[0_0_40px_rgba(255,191,0,0.6)] transition-all"
           >
-            <a href="https://pump.fun/coin/TEST123456789ABC" target="_blank" rel="noopener noreferrer">
-  Buy $LM10MAG on Pump.fun
-</a>
+            <a href="https://pump.fun/coin/8sCjTMCnPzFapU7vaycgBdgPMseQ8GDEPYGAhNR1uwV8" target="_blank" rel="noopener noreferrer">
+              Buy $LM10MAG on Pump.fun
+            </a>
           </Button>
           <Button
             size="lg"
@@ -102,7 +102,13 @@ export function Hero() {
             asChild
             className="border-white/20 text-foreground hover:bg-white/10 hover:text-foreground font-bold text-lg px-8 h-14 backdrop-blur-sm"
           >
-            <a href="#community">Join the Community</a>
+            <a
+              href="https://dexscreener.com/solana/DFdFTSn4QMgHQ9c1MASGkh12XDeVBHWRp8MpevrcUxNN"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on Dexscreener
+            </a>
           </Button>
         </motion.div>
 
@@ -147,96 +153,96 @@ export function Hero() {
             The official mint address will be added here at launch.
           </p>
         </motion.div>
-            {/* Messi Instagram Embed Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.9, ease: "easeOut" }}
-        className="w-full max-w-6xl mt-16"
-      >
-        <div className="grid lg:grid-cols-2 gap-10 items-start">
-          
-          {/* Left column: Narrative copy */}
-          <div className="space-y-6 text-left">
-            <div className="mb-8">
-              <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3 font-semibold">
-                Live Narrative
-              </p>
-              <h3 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
-                Messi is signing history.<br/>
-                $LM10MAG is launching it.
-              </h3>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                As Messi signs his World Cup jerseys and the golden ball on Instagram, 
-                LM10MAG turns that exact moment into a live Solana narrative.
-              </p>
+
+        {/* Messi Instagram Embed Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.9, ease: "easeOut" }}
+          className="w-full max-w-6xl mt-16"
+        >
+          <div className="grid lg:grid-cols-2 gap-10 items-start">
+            {/* Left column: Narrative copy */}
+            <div className="space-y-6 text-left">
+              <div className="mb-8">
+                <p className="text-xs uppercase tracking-[0.3em] text-primary mb-3 font-semibold">
+                  Live Narrative
+                </p>
+                <h3 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+                  Messi is signing history.<br/>
+                  $LM10MAG is launching it.
+                </h3>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  As Messi signs his World Cup jerseys and the golden ball on Instagram, 
+                  LM10MAG turns that exact moment into a live Solana narrative.
+                </p>
+              </div>
+
+              <div className="space-y-5">
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-bold text-lg mb-2">Fresh narrative, perfect timing</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      This isn't a random memecoin. It's a cultural moment happening RIGHT NOW 
+                      on Instagram, captured on Solana.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-bold text-lg mb-2">Global recognition, instant virality</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Messi + World Cup + #10 = billions know the story. 
+                      $LM10MAG is the token that makes it tradeable.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-bold text-lg mb-2">Fair launch on Pump.fun</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      No presale, no VC allocation. Pure community launch with anti-snipe bundler 
+                      protection. Everyone starts equal.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="space-y-5">
-              <div className="flex items-start gap-4">
-                <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-bold text-lg mb-2">Fresh narrative, perfect timing</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    This isn't a random memecoin. It's a cultural moment happening RIGHT NOW 
-                    on Instagram, captured on Solana.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-bold text-lg mb-2">Global recognition, instant virality</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    Messi + World Cup + #10 = billions know the story. 
-                    $LM10MAG is the token that makes it tradeable.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-bold text-lg mb-2">Fair launch on Pump.fun</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    No presale, no VC allocation. Pure community launch with anti-snipe bundler 
-                    protection. Everyone starts equal.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Right column: Video player */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-[540px] rounded-2xl overflow-hidden border border-white/10 bg-black/40 backdrop-blur-md shadow-[0_0_40px_rgba(0,0,0,0.3)]">
-              <video
-                controls
-                playsInline
-                preload="metadata"
-                className="w-full h-auto block"
-              >
-                <source src="/MESSI%20MP4.mp4" type="video/mp4" />
-                Tu navegador no soporta video HTML5.
-              </video>
-
-              <div className="p-3 bg-black/60 backdrop-blur-sm">
-                <a
-                  href="https://www.instagram.com/reel/DXrJkgkjKvf/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs text-muted-foreground hover:text-primary transition-colors"
+            {/* Right column: Video player */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="w-full max-w-[540px] rounded-2xl overflow-hidden border border-white/10 bg-black/40 backdrop-blur-md shadow-[0_0_40px_rgba(0,0,0,0.3)]">
+                <video
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="w-full h-auto block"
                 >
-                  Ver publicación original en Instagram
-                </a>
+                  <source src="/MESSI%20MP4.mp4" type="video/mp4" />
+                  Tu navegador no soporta video HTML5.
+                </video>
+
+                <div className="p-3 bg-black/60 backdrop-blur-sm">
+                  <a
+                    href="https://www.instagram.com/reel/DXrJkgkjKvf/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    Ver publicación original en Instagram
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-         
-
-        </div>
-      </motion.div>
+        </motion.div>
       </div>
     </section>
   );
 }
+  
