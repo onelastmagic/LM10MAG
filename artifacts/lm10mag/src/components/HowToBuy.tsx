@@ -70,7 +70,9 @@ export function HowToBuy() {
             className="mt-12 text-center"
           >
             <Button size="lg" variant="outline" asChild className="border-secondary text-secondary hover:bg-secondary/10 mb-8">
-              <a href="#">View Chart on Dexscreener</a>
+      <a href="https://dexscreener.com/solana/TEST123456789ABC" target="_blank" rel="noopener noreferrer">
+  View Chart on Dexscreener
+</a>
             </Button>
 
             <div className="p-6 border-t border-destructive/30 bg-gradient-to-b from-destructive/5 to-transparent rounded-b-xl">
